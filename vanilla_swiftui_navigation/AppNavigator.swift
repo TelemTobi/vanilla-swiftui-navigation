@@ -12,7 +12,7 @@ import SwiftUI
 
 final class AppRouter: ObservableObject {
     
-    // Here u define the all the possible destinations along with their injected values
+    // Here u define all the possible destinations along with their injected values
     public enum Destination: Hashable, Codable {
         case secondView
         case thirdView(diExample: String)
@@ -51,6 +51,7 @@ struct AppNavigator: View {
                     }
                 }
         }
+        // Instead of using SwiftUI's environment, the router can be passed via ViewModels, Presenters or whatever ur'e using :)
         .environmentObject(router)
     }
 }
