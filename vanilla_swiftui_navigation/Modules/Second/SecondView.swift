@@ -1,5 +1,5 @@
 //
-//  FirstView.swift
+//  SecondView.swift
 //  vanilla_swiftui_navigation
 //
 //  Created by Telem Tobi on 19/06/2024.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct FirstView: View {
+struct SecondView: View {
     
-    @EnvironmentObject var router: AppRouter
+    let viewModel: SecondViewModel
     
     var body: some View {
         Button("Proceed") {
-            router.proceedFromFirstView()
+            viewModel.didTapProceedButton()
         }
         .buttonStyle(.bordered)
-        .navigationTitle("First View")
+        .navigationTitle("Second View")
     }
 }

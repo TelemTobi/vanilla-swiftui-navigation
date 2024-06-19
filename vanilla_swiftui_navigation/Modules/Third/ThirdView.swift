@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ThirdView: View {
     
-    let title: String
+    let viewModel: ThirdViewModel
     
     var body: some View {
         Button("Proceed") {
