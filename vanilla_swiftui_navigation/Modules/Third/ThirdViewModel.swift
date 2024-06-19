@@ -11,7 +11,6 @@ protocol ThirdRouter {
 
 struct ThirdViewModel {
     
+    let title: String
     let router: ThirdRouter
-    
-    
 }

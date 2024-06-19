@@ -12,10 +12,7 @@ struct ThirdView: View {
     let viewModel: ThirdViewModel
     
     var body: some View {
-        Button("Proceed") {
-            
-        }
-        .buttonStyle(.bordered)
-        .navigationTitle(title)
+        Color.clear
+            .navigationTitle(viewModel.title)
     }
 }

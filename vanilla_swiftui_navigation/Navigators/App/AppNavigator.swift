@@ -25,7 +25,7 @@ struct AppNavigator: View {
                         SecondView(viewModel: viewModel)
                         
                     case let .thirdView(title):
-                        let viewModel = ThirdViewModel(router: coordinator)
+                        let viewModel = ThirdViewModel(title: title, router: coordinator)
                         ThirdView(viewModel: viewModel)
                     }
                 }
